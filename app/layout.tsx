@@ -1,3 +1,4 @@
+// アプリケーション全体に適用されるレイアウトコンポーネント
 import '@/app/ui/global.css';
 import { inter } from '@/app/ui/fonts';
 
