@@ -1,7 +1,17 @@
 // /dashboard下にあるpagesのレイアウトを定義するファイル
+import { Metadata } from "next";
 import SideNav from "@/app/ui/dashboard/sidenav";
 
-export const exprimental_ppr = true;
+export const experimental_ppr = true;
+
+export const metadata: Metadata = {
+    title: {
+        default: 'Acme Dashboard',
+        template: '%s | Acme Dashboard',
+    },
+    description: 'The official Next.js Course Dashboard, built with App Router.',
+    metadataBase: new URL('https://next-learn-dashboard.vercel.sh'),
+}
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
